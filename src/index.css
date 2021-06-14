@@ -16,20 +16,20 @@ body {
 
 a {
     color: #f9f9f9;
-    text-decoration: none;//removes 'underline' from hyperlinks
+    text-decoration: none; /*removes 'underline' from hyperlinks*/
 }
 
-@media only screen and (min-width: 768px) { //for large devices such as laptops
+@media only screen and (min-width: 768px) { /*for large devices such as laptops*/
     body {
         font-size: 16px;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) { //normal sized phone
+@media only screen and (min-width: 480px) and (max-width: 768px) { /*normal sized phone*/
     body {
         font-size: 15px;
     }
 }
-@media only screen and (max-width: 478px) { //very small devices
+@media only screen and (max-width: 478px) { /*very small devices*/
     body {
         font-size: 14px;
     }
