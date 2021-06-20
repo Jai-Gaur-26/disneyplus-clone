@@ -13,6 +13,7 @@ const Login = (props) => {
                         increase by $1.
                     </Description>
                     <CTALogoTwo src = '/images/cta-logo-two.png' alt=''/>
+                    <Credits>Made with ❤️ by Jai Gaur</Credits>
                 </CTA>
                 <BgImage />
             </Content>
@@ -111,6 +112,11 @@ const CTALogoTwo = styled.img`
     display: inline-block;
     vertical-align: bottom;
     width: 100%;
+`;
+
+const Credits = styled.p`
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
 `;
 
 export default Login;
