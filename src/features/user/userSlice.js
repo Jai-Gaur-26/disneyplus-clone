@@ -16,5 +16,11 @@ const userSlice = createSlice({
             state.email = action.payload.email;
             state.photo = action.payload.photo;
         },
+
+        setsignOutState: state => {
+            state.name = null;
+            state.email = null;
+            state.photo = null;
+        }
     },
 });
