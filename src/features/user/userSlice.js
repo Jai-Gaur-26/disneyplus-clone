@@ -25,7 +25,7 @@ const userSlice = createSlice({
     },
 });
 
-//export functions to use them in other files
+//export name,Exportemail,photo to use them in other files
 export const { setUserLoginDetails, setsignOutState } = userSlice.actions;
 
 export const selectUserName = (state) => state.user.name;
