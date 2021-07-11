@@ -1,19 +1,37 @@
 //Navbar on login page
 import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+import {useHistory} from "react-router-dom";
 import { auth, provider } from "../firebase";
+import {selectUserName, selectUserPhoto, selectUserLoginDetails, setUserLoginDetails} from "../features/user/userSlice";
 
 const Header = (props) => {
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const username =  useSelector(selectUserName);
+    const userPhoto = useSelector(selectUserPhoto);
+
 
     const handleAuth = () => {
         auth
             .signInWithPopup(provider)
             .then((result) => {
-                console.log(result);
-        })
-        .catch((error) => {
+                setUser(result.user);
+            })
+            .catch((error) => {
             alert(error.message);
-        });
-    }
+            });
+        };
+
+        const setUser = (user) => {
+            dispatch(
+                setUserLoginDetails({
+                    name:user.displayName,
+                    email:user.email,
+                    photo:user.photoURL,
+                })
+            );
+        };
 
     return (
         <Nav>
