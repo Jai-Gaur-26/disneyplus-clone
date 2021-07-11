@@ -8,7 +8,7 @@ import {selectUserName, selectUserPhoto, selectUserLoginDetails, setUserLoginDet
 const Header = (props) => {
     const dispatch = useDispatch();
     const history = useHistory();
-    const username =  useSelector(selectUserName);
+    const userName =  useSelector(selectUserName);
     const userPhoto = useSelector(selectUserPhoto);
 
 
@@ -38,6 +38,11 @@ const Header = (props) => {
             <Logo>
                 <img src='./images/logo.svg' alt='Disney+' />
             </Logo>
+            
+            { !userName ? <Login onClick={handleAuth}>Login</Login> 
+            : 
+            <>
+
             <NavMenu> 
                 <a href="/home">
                     <img src='/images/home-icon.svg' alt="HOME" />
@@ -64,7 +69,9 @@ const Header = (props) => {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <Login onClick={handleAuth}>Login</Login>
+            <UserImg src={userPhoto} alt={userName} />
+            </>
+        }
         </Nav>
     );
 };
@@ -177,6 +184,10 @@ const Login = styled.a`
         color: #000;
         border-color: transparent;
     }
+`;
+
+const UserImg = styled.img`
+    height: 100%;
 `;
 
 export default Header;
