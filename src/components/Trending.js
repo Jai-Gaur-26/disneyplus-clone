@@ -8,25 +8,25 @@ const Trending = (props) => {
             <Content>
                 <Wrap>
                     <Link to='/'>
-                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney" />
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals" />
                     </Link>
                 </Wrap>
 
                 <Wrap>
                     <Link to='/'>
-                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney" />
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals" />
                     </Link>
                 </Wrap>
 
                 <Wrap>
                     <Link to='/'>
-                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney" />
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals" />
                     </Link>
                 </Wrap>
 
                 <Wrap>
                     <Link to='/'>
-                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney" />
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals" />
                     </Link>
                 </Wrap>
                 
